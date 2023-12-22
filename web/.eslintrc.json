@@ -1,0 +1,65 @@
+{
+    "env": {
+      "es6": true,
+      "node": true
+    },
+    "extends": [
+      "airbnb-base",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:import/errors",
+      "plugin:import/warnings",
+      "plugin:import/typescript",
+      "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint", "prettier"],
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    },
+    "rules": {
+      // General eslint
+      "arrow-body-style": "warn",
+      "eol-last": "off",
+      "guard-for-in": "off",
+      "no-alert": "warn",
+      "no-async-promise-executor": "off",
+      "no-await-in-loop": "off",
+      "no-console": "warn",
+      "no-loop-func": "off",
+      "no-restricted-syntax": "off",
+      "no-shadow": "off", // We use the typescript no shadow. More info on https://github.com/typescript-eslint/typescript-eslint/issues/2471
+      "no-useless-constructor": "off",
+      "no-plusplus": "off",
+      "object-curly-newline": "off",
+      "prefer-destructuring": "warn",
+      "radix": "off",
+      "require-await": "warn",
+      "spaced-comment": ["warn", "always", { "exceptions": ["*"] }],
+      "no-continue": "off",
+      "no-promise-executor-return": "off",
+      "default-param-last": "off",
+
+      "linebreak-style": "off",
+  
+      // Typescript
+      "@typescript-eslint/ban-ts-comment": "off",
+      "@typescript-eslint/ban-ts-ignore": "off",
+      "@typescript-eslint/ban-types": "off",
+      "@typescript-eslint/explicit-function-return-type": "off",
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-shadow": "warn",
+  
+      // Prettier
+      "prettier/prettier": "warn",
+  
+      // Import
+      "import/default": "off",
+      "import/extensions": "off",
+      "import/no-cycle": "off",
+      "import/order": "warn",
+      "import/prefer-default-export": "off"
+    }
+  }
+  

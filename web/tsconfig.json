@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "outDir": "./dist",
+      "removeComments": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "target": "ES2021",
+      "strict": true,
+      "strictNullChecks": false,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "useUnknownInCatchVariables": false,
+      "resolveJsonModule": true,
+      "sourceMap": true,
+      "inlineSources": true,
+      "sourceRoot": "/",
+      "skipLibCheck": true
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
+  }
+  

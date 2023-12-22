@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  api-server:
+    build:
+      context: .
+    container_name: api-server
+    image: api-server
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    volumes:
+      - ./logs:/srv/app/logs
+      - ./db:/srv/app/db
+    networks:
+      - oc01-network
+    ports:
+      - "3000:3000"
+
+networks:
+  oc01-network:
+    driver: bridge
