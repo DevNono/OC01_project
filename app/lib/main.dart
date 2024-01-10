@@ -101,7 +101,7 @@ class MyApp extends StatelessWidget {
               ),
         ),
       ),
-      initialRoute: '/pair',
+      initialRoute: '/home',
       getPages: [
         GetPage(
           name: '/home',

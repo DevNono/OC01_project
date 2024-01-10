@@ -25,7 +25,7 @@ class _SettingsState extends State<Settings> {
           Card(
               child: ElevatedButton(
             child: const ListTile(
-              leading: FlutterLogo(),
+              leading: Icon(Icons.lock_outline_rounded, color: Colors.white),
               title: Text('Change Pin'),
             ),
             onPressed: () {
@@ -35,7 +35,7 @@ class _SettingsState extends State<Settings> {
           Card(
               child: ElevatedButton(
             child: const ListTile(
-              leading: FlutterLogo(),
+              leading: Icon(Icons.description_rounded, color: Colors.white),
               title: Text('Logs'),
             ),
             onPressed: () {
@@ -45,7 +45,7 @@ class _SettingsState extends State<Settings> {
           Card(
             child: ElevatedButton(
               child: const ListTile(
-                leading: FlutterLogo(),
+                leading: Icon(Icons.link_off_rounded, color: Colors.white),
                 title: Text('Unpair Device'),
               ),
               onPressed: () {
@@ -56,7 +56,7 @@ class _SettingsState extends State<Settings> {
           Card(
             child: ElevatedButton(
               child: const ListTile(
-                leading: FlutterLogo(),
+                leading: Icon(Icons.logout_rounded, color: Colors.white),
                 title: Text('Disconnect App'),
               ),
               onPressed: () {
